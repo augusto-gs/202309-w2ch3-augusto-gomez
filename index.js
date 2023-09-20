@@ -59,3 +59,6 @@ const removeFromPlaylist = (title) => {
 };
 
 const getSongByTitle = (title) => songs.find((song) => song.title === title);
+
+const getSongsByGenre = (songs, genre) =>
+  songs.filter((song) => song.genre.toLowerCase() === genre.toLowerCase());
