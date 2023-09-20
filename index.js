@@ -74,7 +74,5 @@ const getSongListByYear = (songs) =>
 const getSongsByTitle = (songs) => songs.map((song) => song.title);
 
 const getAverageDurationOfSongs = (songs) =>
-  songs
-    .map((song) => song.duration)
-    .reduce((accumulator, currentCount) => accumulator + currentCount, 0) /
+  songs.reduce((accumulator, value) => value.duration + accumulator, 0) /
   songs.length;
