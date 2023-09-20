@@ -57,3 +57,5 @@ const removeFromPlaylist = (title) => {
 
   songs.splice(positionOfRemovedSong, 1);
 };
+
+const getSongByTitle = (title) => songs.find((song) => song.title === title);
