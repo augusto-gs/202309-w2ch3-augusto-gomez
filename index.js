@@ -62,3 +62,8 @@ const getSongByTitle = (title) => songs.find((song) => song.title === title);
 
 const getSongsByGenre = (songs, genre) =>
   songs.filter((song) => song.genre.toLowerCase() === genre.toLowerCase());
+
+const getTotalOfSongsThatWereHits = (songs) => {
+  const hitSong = songs.filter((song) => song.hit);
+  return hitSong.length;
+};
