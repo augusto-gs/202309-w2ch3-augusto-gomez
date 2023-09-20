@@ -67,3 +67,6 @@ const getTotalOfSongsThatWereHits = (songs) => {
   const hitSong = songs.filter((song) => song.hit);
   return hitSong.length;
 };
+
+const getSongListByYear = (songs) =>
+  songs.toSorted((number1, number2) => number1.year - number2.year);
